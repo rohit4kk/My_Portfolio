@@ -6,6 +6,7 @@
     <title>Portfolio_website</title>
      <link rel="stylesheet" href="style.css">
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
 </head>
 <body>
      <header data-aos="fade-down" data-aos-duration="2000">
@@ -100,6 +101,43 @@
 
          <section class="my-project">
             <h1 class="section-title autoDisplay">Projects </h1>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <img id="projectImage0" src="images/snehita-screenshot.png" alt="Snehita Well-Being">
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1><span class="gradient">Snehita Well-Being</span> – Mental Health Counselling Platform (IIT Ropar)</h1>
+                    <p>Built a secure full-stack platform for mental health appointment scheduling and management. Developed RESTful APIs with JWT authentication and role-based access control, a responsive React frontend for booking, profiles, and availability management, and an MVC backend with PostgreSQL and containerized deployment using Docker. Tech: React.js, Node.js, Express.js, PostgreSQL, Docker, JWT.</p>
+                    <button onclick="window.open('https://github.com/Rajat-14/DEP26.D08-Snehita-Wellbeing.git')"><i class='bx bxl-github' ></i> GitHub</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <img id="projectImage0b" src="images/aims-screenshot.png" alt="AIMS">
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1><span class="gradient">AIMS</span> – Academic Information Management System</h1>
+                    <p>Developed a role-based academic management system supporting Student, Instructor, Advisor, and Admin workflows, with multi-level course enrollment approval (Instructor → Faculty Advisor) reflecting real university processes. Designed OTP-based email authentication with role-based access control and auto dashboard redirection, and built RESTful APIs integrated with Supabase (PostgreSQL). Tech: React, Node.js, Express.js, Supabase (PostgreSQL), UUID, Nodemailer.</p>
+                    <button onclick="window.open('https://github.com/rohit4kk/AIMS_Portal.git')"><i class='bx bxl-github'></i> GitHub</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <img id="projectImage0d" src="images/rapf-graphic.svg" alt="Rank Aggregation with Proportionate Fairness">
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1><span class="gradient">Rank Aggregation with Proportionate Fairness</span> (RAPF)</h1>
+                    <p>Implemented a fair rank aggregation system ensuring proportionate representation of protected groups using p-fairness. Engineered an exact greedy algorithm (O(n)) and a graph-matching approximation to solve Individual p-Fairness (IPF), using multiprocessing and Gurobi ILP to achieve 100% fairness vs 78% in baselines. Tech: Python, Gurobi Optimizer, Multiprocessing, Graph Algorithms.</p>
+                    <button onclick="window.open('https://github.com/rohit4kk/P-Fair-ranking.git')"><i class='bx bxl-github'></i> GitHub</button>
+                </div>
+            </div>
+
             <div class="project-card">
                 <div class="project-vidbox autoBlur" >
                <img id="projectVideo1" src="images/venus.png" alt="RiscV">
@@ -107,9 +145,9 @@
                     <div class="hover-sign"></div>
                 </div>
                 <div class="project-info fadein-left">
-                    <h1><span class="gradient">Risc V</span> simulator</h1>
-                    <p>The RISC-V Assembler is a robust tool designed to convert RISC-V assembly language into corresponding machine code. It is ideal for both academic and professional environments, providing an accurate translation from human-readable assembly code to executable binary instructions. Currently no UI been made</p>
-                    <button><i class='bx bx-link-external' ></i> Website</button>
+                    <h1><span class="gradient">RISC-V</span> Assembler &amp; Simulator</h1>
+                    <p>Built an assembler to translate RISC-V assembly code into machine instructions with full ISA and directive support, and developed a 5-stage pipelined CPU simulator with configurable data forwarding and hazard resolution. Implemented branch prediction using BTB and a 1-bit predictor to reduce control-flow stalls. Tech: C++, RISC-V ISA, Pipelining, Binary Encoding, Branch Prediction.</p>
+                    <button onclick="window.open('https://github.com/Rajat-14/CS204_Group_Project.git')"><i class='bx bxl-github' ></i> GitHub</button>
             </div>
             </div>
 
@@ -132,7 +170,6 @@
     <div class="project-info fadein-left">
         <h1>Real-Time <span class="gradient"> Weather Forecast</span> Web App</h1>
         <p>Developed a dynamic web application that provides real-time weather updates for any city using the OpenWeatherMap API. Implemented the backend using Node.js and Express.js, with secure API key management via environment variables. Designed user-friendly input for location search, and fetched and displayed weather parameters such as temperature, humidity, and weather conditions in real-time.</p>
-        <button><i class='bx bx-link-external'></i> Website</button>
     </div>
 </div>
 
@@ -140,11 +177,10 @@
     <div class="project-vidbox autoBlur">
         <img id="projectImage3" src="images/gamebar.png" alt="Weather">
     </div>
-    
+
     <div class="project-info fadein-left">
         <h1> <span class="gradient"> searchGames</span> : A game explorer</h1>
         <p>Developed a dynamic web application that provides real-time weather updates for any city using the OpenWeatherMap API. Implemented the backend using Node.js and Express.js, with secure API key management via environment variables. Designed user-friendly input for location search, and fetched and displayed weather parameters such as temperature, humidity, and weather conditions in real-time.</p>
-        <button><i class='bx bx-link-external'></i> Website</button>
     </div>
 </div>
 
@@ -156,7 +192,7 @@
     <div class="project-info fadein-left">
         <h1><span class="gradient"> C to Promela</span>  Code Converter</h1>
         <p>Designed and implemented a tool to convert C code constructs into equivalent Promela (Process Meta Language) representations to facilitate formal verification using the SPIN model checker. The converter supports translation of key C elements such as loops, conditional statements, and variable assignments into their Promela counterparts.</p>
-             <button><i class='bx bx-link-external'></i> Website</button>
+             <button onclick="window.open('https://github.com/Rajat-14/C--Promela.git')"><i class='bx bxl-github'></i> GitHub</button>
     </div>
 </div>
 
@@ -285,6 +321,7 @@
       <div class="scroll-down"></div>
       
    
+      <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
       <script >
       AOS.init();
     </script>

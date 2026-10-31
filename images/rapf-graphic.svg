@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#00aaa7"/>
+      <stop offset="100%" stop-color="#00e1ff"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#008cff"/>
+      <stop offset="100%" stop-color="#00ffd0"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0800ff"/>
+      <stop offset="100%" stop-color="#00e1ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="#0f1217"/>
+
+  <!-- fairness baseline -->
+  <line x1="60" y1="320" x2="540" y2="320" stroke="#3a3f55" stroke-width="2"/>
+
+  <!-- ranked items grouped by fairness, equal top alignment -->
+  <g>
+    <rect x="80"  y="150" width="44" height="170" rx="6" fill="url(#g1)"/>
+    <rect x="150" y="165" width="44" height="155" rx="6" fill="url(#g2)"/>
+    <rect x="220" y="150" width="44" height="170" rx="6" fill="url(#g3)"/>
+    <rect x="290" y="165" width="44" height="155" rx="6" fill="url(#g1)"/>
+    <rect x="360" y="150" width="44" height="170" rx="6" fill="url(#g2)"/>
+    <rect x="430" y="165" width="44" height="155" rx="6" fill="url(#g3)"/>
+    <rect x="500" y="150" width="44" height="170" rx="6" fill="url(#g1)"/>
+  </g>
+
+  <!-- rank numbers -->
+  <g fill="#9ea7c7" font-family="Segoe UI, sans-serif" font-size="16" text-anchor="middle">
+    <text x="102" y="345">1</text>
+    <text x="172" y="345">2</text>
+    <text x="242" y="345">3</text>
+    <text x="312" y="345">4</text>
+    <text x="382" y="345">5</text>
+    <text x="452" y="345">6</text>
+    <text x="522" y="345">7</text>
+  </g>
+
+  <text x="300" y="60" fill="#e8ecf7" font-family="Segoe UI, sans-serif" font-size="26" font-weight="700" text-anchor="middle">
+    Proportionate Fairness in Rank Aggregation
+  </text>
+  <text x="300" y="90" fill="#8d96b8" font-family="Segoe UI, sans-serif" font-size="15" text-anchor="middle">
+    Balanced representation across protected groups
+  </text>
+</svg>

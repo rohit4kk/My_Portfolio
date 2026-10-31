@@ -44,21 +44,8 @@ document.querySelectorAll('button').forEach(btn => {
   }
 });
 
-// Project "Website" buttons open placeholder GitHub links
-const projectLinks = [
-  'https://github.com/Rajat-14/CS204_Group_Project.git',
-  'https://github.com/your-username/project-two',
-  'https://github.com/Rajat-14/C--Promela.git',
-  // …add as many as you have projects
-];
-
-document.querySelectorAll('.project-info button').forEach((btn, index) => {
-  // pick the URL at the same index (or fallback to placeholder)
-  const url = projectLinks[index] || 'https://github.com/placeholder';
-  btn.addEventListener('click', () => {
-    window.open(url, '_blank');
-  });
-});
+// Project links: buttons with their own onclick open directly;
+// buttons without one (no known repo yet) are left inert.
 
 // Social icon clicks (GitHub, LinkedIn) open placeholder links
 const socialIcons = document.querySelectorAll('.box-icons p');
