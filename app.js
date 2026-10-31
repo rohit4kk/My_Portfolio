@@ -1,67 +1,21 @@
-// app.js
-// Toggle mobile menu
+// Mobile nav toggle
+const navbar = document.getElementById('navbar');
+const navToggle = document.getElementById('navToggle');
 
-const navUl = document.querySelector('header ul');
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    navbar.classList.toggle('open');
+  });
+}
 
-
-
-// Optionally, close menu when a link is clicked (for mobile)
-document.querySelectorAll('header ul li a').forEach(link => {
+// Close mobile menu after a link is clicked
+document.querySelectorAll('#navbar ul a').forEach(link => {
   link.addEventListener('click', () => {
-    if (navUl.classList.contains('show')) {
-      navUl.classList.remove('show');
-    }
+    navbar.classList.remove('open');
   });
 });
 
-// Smooth scrolling for section nav buttons
-document.querySelectorAll('header ul li a').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const section = link.textContent.trim().toLowerCase();
-    let targetSelector = '';
-    if (section === 'about')   targetSelector = '.info-section';
-    if (section === 'skills')  targetSelector = '.skills-section';
-    if (section === 'projects')targetSelector = '.my-project';
-    if (section === 'hobbies') targetSelector = '#hobbies';   // ← add this line
-
-    if (targetSelector) {
-      const targetEl = document.querySelector(targetSelector);
-      targetEl && targetEl.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
+// Navbar background intensifies on scroll
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
-
-
-// Contact Me buttons scroll to contact section
-document.querySelectorAll('button').forEach(btn => {
-  if (btn.textContent.includes('Contact Me')) {
-    btn.addEventListener('click', e => {
-      e.preventDefault();
-      const contactEl = document.querySelector('.contact-section');
-      contactEl && contactEl.scrollIntoView({ behavior: 'smooth' });
-    });
-  }
-});
-
-// Project links: buttons with their own onclick open directly;
-// buttons without one (no known repo yet) are left inert.
-
-// Social icon clicks (GitHub, LinkedIn) open placeholder links
-const socialIcons = document.querySelectorAll('.box-icons p');
-if (socialIcons.length >= 2) {
-  socialIcons[0].addEventListener('click', () => {
-    window.open('https://github.com/rohit4kk', '_blank');
-  });
-  socialIcons[1].addEventListener('click', () => {
-    window.open('https://www.linkedin.com/in/rohit-verma-319313309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank');
-  });
-   socialIcons[2].addEventListener('click', () => {
-    window.open('https://www.instagram.com/rohit_4kk?igsh=Mnl6NzJ4bmtmczZ1', '_blank');
-  });
-}
-
-// Initialize AOS (if available)
-if (typeof AOS !== 'undefined') {
-  AOS.init();
-}

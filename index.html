@@ -1,334 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio_website</title>
-     <link rel="stylesheet" href="style.css">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Verma | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
 </head>
 <body>
-     <header data-aos="fade-down" data-aos-duration="2000">
-            <div class="left">
-                <img src="images/download.png" alt="logo">
-                <h2><span style="color: #04ffd5e8;">IIT ROPAR</span></h2>
-            </div>
 
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-               
-                <li><a href="#hobbies">Hobbies</a></li>
+<div class="noise"></div>
 
-            </ul>
-
-            <div class="box-icons">
-                
-                <p><i class='bx bxl-github'></i></p>
-                <p><i class='bx bxl-linkedin-square'></i></p>
-                   <p><i class='bx bxl-instagram'></i></p>
-            </div>
-
-                     
-        </header>
-
-         <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
-            <video autoplay loop muted plays-inline src="videos/152204-802330889_small.mp4"></video>
-        </div> 
-
-         <section class="hero ">
-            <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
-                <div class="hero-info-title" >
-                    <i class='bx bxl-sketch'></i>
-                    Undergraduate At IIT Ropar
-                </div>
-
-              <h1 data-aos="fade-right" data-aos-duration="3000">
-  Hi, I am <span class="gradient">Rohit Verma</span>.
-</h1>
-
-
-              <p>I am a Computer Science student at IIT Ropar.</p>
-
-
-                <button><i class='bx bx-send' ></i> Contact Me</button>
-            </div>
-            
-             <div class="skills-video-box " >
-                <video class="skills-video autoBlur" autoplay loop muted plays-inline src="videos/hero-video.mp4"></video>
-            </div> 
-        
-            <div class="scroll-down"></div>
-        </section>
-        <seaction class="info-section">
-            <h1 class="section-title autoDisplay">Hey,There👋</h1>
-            <div class="info-cards autoBlur">
-                <div class="card  ">
-                    <h1>Hi there, I'm Rohit</h1>
-                    <p>As a CSE student at IIT Ropar, I’ve honed my skills in data structures, algorithms, and C++, while also pursuing video editing as a creative passion.</p>
-
-                    <img src="images/WhatsApp Image 2025-06-23 at 12.09.29_b00f5454.jpg" alt="">
-                </div>
-
-                <div class="card r">
-                    <h1>Technical Skills</h1>
-                    <p>I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.</p>
-                
-                    <img src="images/grid2.png" alt="">
-                </div>
-
-                <div class="card">
-                    <h1> I’m always prepared to align seamlessly with global teams and shifting schedules.</h1>
-                    <p>I’m currently based in IIT Ropar, Punjab, and I’m open to remote collaboration.</p>
-                
-                    <video src="videos/uni.mp4" autoplay loop muted plays-inline></video>
-
-                    <button><i class='bx bx-send'></i> Contact Me</button>
-                </div>
-
-                <div class="card ">
-                    <h1>My Passion for Coding</h1>
-                    <p>Coding is more than a skill—it's something I genuinely enjoy. I love solving real-world problems, exploring new technologies, and constantly pushing myself to improve as a developer.
-
-</p>
-                
-                    <img src="images/grid4.png" alt="">
-                </div>
-            </div>
-        </seaction>
-
-         <section class="my-project">
-            <h1 class="section-title autoDisplay">Projects </h1>
-
-            <div class="project-card">
-                <div class="project-vidbox autoBlur">
-                    <img id="projectImage0" src="images/snehita-screenshot.png" alt="Snehita Well-Being">
-                    <div class="hover-sign"></div>
-                </div>
-                <div class="project-info fadein-left">
-                    <h1><span class="gradient">Snehita Well-Being</span> – Mental Health Counselling Platform (IIT Ropar)</h1>
-                    <p>Built a secure full-stack platform for mental health appointment scheduling and management. Developed RESTful APIs with JWT authentication and role-based access control, a responsive React frontend for booking, profiles, and availability management, and an MVC backend with PostgreSQL and containerized deployment using Docker. Tech: React.js, Node.js, Express.js, PostgreSQL, Docker, JWT.</p>
-                    <button onclick="window.open('https://github.com/Rajat-14/DEP26.D08-Snehita-Wellbeing.git')"><i class='bx bxl-github' ></i> GitHub</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-vidbox autoBlur">
-                    <img id="projectImage0b" src="images/aims-screenshot.png" alt="AIMS">
-                    <div class="hover-sign"></div>
-                </div>
-                <div class="project-info fadein-left">
-                    <h1><span class="gradient">AIMS</span> – Academic Information Management System</h1>
-                    <p>Developed a role-based academic management system supporting Student, Instructor, Advisor, and Admin workflows, with multi-level course enrollment approval (Instructor → Faculty Advisor) reflecting real university processes. Designed OTP-based email authentication with role-based access control and auto dashboard redirection, and built RESTful APIs integrated with Supabase (PostgreSQL). Tech: React, Node.js, Express.js, Supabase (PostgreSQL), UUID, Nodemailer.</p>
-                    <button onclick="window.open('https://github.com/rohit4kk/AIMS_Portal.git')"><i class='bx bxl-github'></i> GitHub</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-vidbox autoBlur">
-                    <img id="projectImage0d" src="images/rapf-graphic.svg" alt="Rank Aggregation with Proportionate Fairness">
-                    <div class="hover-sign"></div>
-                </div>
-                <div class="project-info fadein-left">
-                    <h1><span class="gradient">Rank Aggregation with Proportionate Fairness</span> (RAPF)</h1>
-                    <p>Implemented a fair rank aggregation system ensuring proportionate representation of protected groups using p-fairness. Engineered an exact greedy algorithm (O(n)) and a graph-matching approximation to solve Individual p-Fairness (IPF), using multiprocessing and Gurobi ILP to achieve 100% fairness vs 78% in baselines. Tech: Python, Gurobi Optimizer, Multiprocessing, Graph Algorithms.</p>
-                    <button onclick="window.open('https://github.com/rohit4kk/P-Fair-ranking.git')"><i class='bx bxl-github'></i> GitHub</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-vidbox autoBlur" >
-               <img id="projectVideo1" src="images/venus.png" alt="RiscV">
-
-                    <div class="hover-sign"></div>
-                </div>
-                <div class="project-info fadein-left">
-                    <h1><span class="gradient">RISC-V</span> Assembler &amp; Simulator</h1>
-                    <p>Built an assembler to translate RISC-V assembly code into machine instructions with full ISA and directive support, and developed a 5-stage pipelined CPU simulator with configurable data forwarding and hazard resolution. Implemented branch prediction using BTB and a 1-bit predictor to reduce control-flow stalls. Tech: C++, RISC-V ISA, Pipelining, Binary Encoding, Branch Prediction.</p>
-                    <button onclick="window.open('https://github.com/Rajat-14/CS204_Group_Project.git')"><i class='bx bxl-github' ></i> GitHub</button>
-            </div>
-            </div>
-
-           <div class="project-card">
-    <div class="project-vidbox autoBlur">
-        <img id="projectImage2" src="images/uno.png" alt="RFID">
+<nav id="navbar">
+    <a href="#top" class="logo">RV<span class="dot">.</span></a>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+        <a href="https://github.com/rohit4kk" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/rohit-verma-319313309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://www.instagram.com/rohit_4kk?igsh=Mnl6NzJ4bmtmczZ1" target="_blank"><i class='bx bxl-instagram'></i></a>
     </div>
-    <div class="project-info fadein-left">
-        <h1>Smart Lock System using  <span class="gradient">RFID and Fingerprint</span>(Arduino Uno)</h1>
-        <p>Built a dual-authentication smart lock using Arduino Uno with RFID and fingerprint sensors. Enabled secure access through fingerprint enrollment/verification and RFID scanning. Controlled a servo motor lock with feedback via LED and buzzer. Used Adafruit Fingerprint, MFRC522, and Servo libraries for hardware integration.</p>
-     
-    </div>
-</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class='bx bx-menu'></i></button>
+</nav>
 
-<div class="project-card">
-    <div class="project-vidbox autoBlur">
-        <img id="projectImage3" src="images/weather.png" alt="Weather">
-    </div>
-    
-    <div class="project-info fadein-left">
-        <h1>Real-Time <span class="gradient"> Weather Forecast</span> Web App</h1>
-        <p>Developed a dynamic web application that provides real-time weather updates for any city using the OpenWeatherMap API. Implemented the backend using Node.js and Express.js, with secure API key management via environment variables. Designed user-friendly input for location search, and fetched and displayed weather parameters such as temperature, humidity, and weather conditions in real-time.</p>
-    </div>
-</div>
+<header id="top" class="hero">
+    <video class="hero-bg" autoplay loop muted playsinline src="videos/152204-802330889_small.mp4"></video>
+    <div class="hero-overlay"></div>
 
-<div class="project-card">
-    <div class="project-vidbox autoBlur">
-        <img id="projectImage3" src="images/gamebar.png" alt="Weather">
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="900">
+        <div class="eyebrow"><i class='bx bxl-sketch'></i> Undergraduate at IIT Ropar</div>
+        <h1>Hi, I'm <span class="gradient">Rohit Verma</span></h1>
+        <p class="hero-sub">Computer Science student building full-stack web applications, systems software, and the occasional pixel-perfect UI.</p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary"><i class='bx bx-rocket'></i> View Projects</a>
+            <a href="#contact" class="btn btn-ghost"><i class='bx bx-send'></i> Contact Me</a>
+        </div>
     </div>
 
-    <div class="project-info fadein-left">
-        <h1> <span class="gradient"> searchGames</span> : A game explorer</h1>
-        <p>Developed a dynamic web application that provides real-time weather updates for any city using the OpenWeatherMap API. Implemented the backend using Node.js and Express.js, with secure API key management via environment variables. Designed user-friendly input for location search, and fetched and displayed weather parameters such as temperature, humidity, and weather conditions in real-time.</p>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</header>
+
+<main>
+
+<section id="about" class="section">
+    <div class="section-head" data-aos="fade-up">
+        <span class="kicker">Hey, there 👋</span>
+        <h2 class="section-title">A bit about me</h2>
     </div>
-</div>
 
-<div class="project-card">
-    <div class="project-vidbox autoBlur">
-        <img id="projectImage3" src="images/Screenshot 2025-06-24 161043.png" alt="CtoP">
-    </div>
-    
-    <div class="project-info fadein-left">
-        <h1><span class="gradient"> C to Promela</span>  Code Converter</h1>
-        <p>Designed and implemented a tool to convert C code constructs into equivalent Promela (Process Meta Language) representations to facilitate formal verification using the SPIN model checker. The converter supports translation of key C elements such as loops, conditional statements, and variable assignments into their Promela counterparts.</p>
-             <button onclick="window.open('https://github.com/Rajat-14/C--Promela.git')"><i class='bx bxl-github'></i> GitHub</button>
-    </div>
-</div>
-
-
-        </section>
-
-        
-
-         <section class="skills-section">
-            <h1 class="section-title autoDisplay">
-                Skills 
-            </h1>
-            <div class="skills-box autoDisplay">
-                <img class="skills-image" src="images/digital brain (2).png" alt="">
-                <div class="Designer autoBlur">
-                    <h1 class="gradient">DSA <i class='bx bx-laptop'></i></h1>
-                    <p>Strong foundation in data structures and algorithmic techniques with hands-on experience solving competitive programming problems and optimizing solutions for efficiency.</p>    
-                </div>
-                
-                <div class="coder autoBlur">
-                    <h1 class="gradient">Development <i class='bx bx-code-block' ></i></h1>
-                    <p>I’m skilled in HTML, CSS, JavaScript, and frameworks like Express js  and Node.js. I also have experience with database management using  MySQL.</p>
-                </div>
-
-               
+    <div class="about-grid">
+        <div class="glass-card about-card span-2" data-aos="fade-up" data-aos-delay="0">
+            <img class="about-photo" src="images/WhatsApp Image 2025-06-23 at 12.09.29_b00f5454.jpg" alt="Rohit Verma">
+            <div class="about-text">
+                <h3>Hi there, I'm Rohit</h3>
+                <p>As a CSE student at IIT Ropar, I've honed my skills in data structures, algorithms, and C++, while also pursuing video editing as a creative passion.</p>
             </div>
-        </section>
+        </div>
 
-      
-<section id="hobbies" class="info-section">
-  <h1 class="section-title autoDisplay">Hobbies</h1>
-  <div
-    class="info-cards"
-    style="display: flex; justify-content: center; padding: 2rem 0;"
-  >
-    <div
-      class="card autoBlur"
-      style="flex: 1 1 300px; max-width: 350px; text-align: center; margin-right: 2rem; display: flex; flex-direction: column; align-items: center;"
-    >
-      <h2 style="margin-bottom: 0.75rem; display: block;">Gaming</h2>
-      <img
-        src="images/ps5.jpg"
-        alt="Gaming"
-        style="
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-          border-radius: 0.5rem;
-          margin-bottom: 0.75rem;
-          display: block;
-        "
-      >
-      <p style="display: block;">I love diving into story-driven games—experiencing rich narratives, connecting with characters, and immersing myself in their worlds.</p>
-    </div>
+        <div class="glass-card about-card" data-aos="fade-up" data-aos-delay="100">
+            <img class="about-icon" src="images/grid2.png" alt="">
+            <h3>Technical Skills</h3>
+            <p>I specialize in a variety of languages, frameworks, and tools that let me build robust, scalable applications.</p>
+        </div>
 
-    <div
-      class="card autoBlur"
-      style="flex: 1 1 300px; max-width: 350px; text-align: center; display: flex; flex-direction: column; align-items: center;"
-    >
-      <h2 style="margin-bottom: 0.75rem; display: block;">Video Editing</h2>
-      <img
-        src="images/video-editing.jpg"
-        alt="Video Editing"
-        style="
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-          border-radius: 0.5rem;
-          margin-bottom: 0.75rem;
-          display: block;
-        "
-      >
-      <p style="display: block;">I enjoy piecing together clips and audio to craft engaging stories, blending creativity with precision to bring visions to life.</p>
+        <div class="glass-card about-card video-card" data-aos="fade-up" data-aos-delay="150">
+            <video src="videos/uni.mp4" autoplay loop muted playsinline></video>
+            <div class="video-card-text">
+                <h3>Remote-ready, always</h3>
+                <p>Based at IIT Ropar, Punjab — open to remote collaboration across time zones.</p>
+                <a href="#contact" class="btn btn-small"><i class='bx bx-send'></i> Contact Me</a>
+            </div>
+        </div>
+
+        <div class="glass-card about-card span-2" data-aos="fade-up" data-aos-delay="200">
+            <img class="about-icon" src="images/grid4.png" alt="">
+            <div class="about-text">
+                <h3>My Passion for Coding</h3>
+                <p>Coding is more than a skill — it's something I genuinely enjoy. I love solving real-world problems, exploring new technologies, and constantly pushing myself to improve as a developer.</p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
+<section id="skills" class="section">
+    <div class="section-head" data-aos="fade-up">
+        <span class="kicker">Toolbox</span>
+        <h2 class="section-title">Skills</h2>
+    </div>
 
+    <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-pane">
+            <h3 class="gradient"><i class='bx bx-laptop'></i> DSA</h3>
+            <p>Strong foundation in data structures and algorithmic techniques, with hands-on experience solving competitive programming problems and optimizing solutions for efficiency.</p>
+        </div>
+        <div class="skill-pane">
+            <h3 class="gradient"><i class='bx bx-code-block'></i> Development</h3>
+            <p>Skilled in HTML, CSS, JavaScript, and frameworks like React, Express.js and Node.js, with experience in database management using PostgreSQL, Supabase and MySQL.</p>
+        </div>
+    </div>
 
+    <div class="skill-tags" data-aos="fade-up" data-aos-delay="150">
+        <span>C/C++</span><span>Python</span><span>JavaScript</span><span>React</span>
+        <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>Supabase</span>
+        <span>Docker</span><span>REST APIs</span><span>JWT Auth</span><span>Git &amp; GitHub</span>
+    </div>
+</section>
 
-          <section class="contact-section ">
-            <h1 class="section-title autoDisplay">Let's Connect</h1>
+<section id="projects" class="section">
+    <div class="section-head" data-aos="fade-up">
+        <span class="kicker">Built &amp; shipped</span>
+        <h2 class="section-title">Projects</h2>
+    </div>
 
+    <div class="project-grid">
 
-              <div class="cv-link">
-    <a href="assets/Rohit_s_CV.pdf" download class="cv-btn">
-      <i class="bx bx-download"></i> Download  CV
-    </a>
-  </div>
-
-            <div class="social-box autoBlur">
-                <a href="#"><i class='bx bxs-phone'></i> +91 9671098999</a>
-             
-                <a href="https://www.linkedin.com/in/rohit-verma-319313309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square' ></i> Rohit Verma</a>
-                <div class="social-icons">
-                 
-                </div>
+        <article class="project-tile" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-media">
+                <img src="images/snehita-screenshot.png" alt="Snehita Well-Being">
             </div>
-
-            <div class="contact-box autoBlur">
-                <p>Whether you're looking to build something awesome, collaborate on a project, or just talk tech—let’s connect! I’m just a message away..</p>
-            
-               <form name="submit-to-google-sheet" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="post">
-
-    <p>Full Name</p>
-    <input name="Name" placeholder="Your Full Name" type="text" required>
-
-    <p>Email Address</p>
-    <input name="Email" placeholder="Your Email" type="email" required>
-
-    <p>Your Message</p>
-   <textarea name="Message" class="input-message" rows="6" cols="50" placeholder="Share your thoughts..." required></textarea>
-
-
-    <button type="submit">Send Message <i class='bx bx-mail-send'></i></button>
-</form>
-
+            <div class="project-body">
+                <span class="project-date">Feb 2026 – May 2026</span>
+                <h3><span class="gradient">Snehita Well-Being</span></h3>
+                <p class="project-tagline">Mental Health Counselling Platform · IIT Ropar</p>
+                <p>Secure full-stack platform for mental health appointment scheduling, with JWT auth, role-based access, an MVC backend on PostgreSQL, and a responsive React frontend — containerized with Docker.</p>
+                <div class="tech-tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>Docker</span><span>JWT</span></div>
+                <button class="btn btn-small" onclick="window.open('https://github.com/Rajat-14/DEP26.D08-Snehita-Wellbeing.git')"><i class='bx bxl-github'></i> GitHub</button>
             </div>
-        
-     
+        </article>
 
-     <script src="app.js"></script>
-     
-      <video class="back-vid" autoplay loop muted plays-inline src="videos/3.mp4"></video>
-      
-      <div class="scroll-down"></div>
-      
-   
-      <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
-      <script >
-      AOS.init();
-    </script>
-    
+        <article class="project-tile" data-aos="fade-up" data-aos-delay="80">
+            <div class="project-media">
+                <img src="images/aims-screenshot.png" alt="AIMS">
+            </div>
+            <div class="project-body">
+                <span class="project-date">Jan 2026 – Feb 2026</span>
+                <h3><span class="gradient">AIMS</span></h3>
+                <p class="project-tagline">Academic Information Management System</p>
+                <p>Role-based academic management system for Student, Instructor, Advisor and Admin workflows, with multi-level enrollment approval, OTP email auth, and REST APIs on Supabase (PostgreSQL).</p>
+                <div class="tech-tags"><span>React</span><span>Node.js</span><span>Express.js</span><span>Supabase</span><span>UUID</span><span>Nodemailer</span></div>
+                <button class="btn btn-small" onclick="window.open('https://github.com/rohit4kk/AIMS_Portal.git')"><i class='bx bxl-github'></i> GitHub</button>
+            </div>
+        </article>
 
+        <article class="project-tile" data-aos="fade-up" data-aos-delay="160">
+            <div class="project-media">
+                <img src="images/rapf-graphic.svg" alt="Rank Aggregation with Proportionate Fairness">
+            </div>
+            <div class="project-body">
+                <span class="project-date">Sept 2025 – Nov 2025</span>
+                <h3><span class="gradient">RAPF</span></h3>
+                <p class="project-tagline">Rank Aggregation with Proportionate Fairness</p>
+                <p>Fair rank aggregation system ensuring proportionate representation of protected groups, using an exact greedy O(n) algorithm and graph-matching approximation — 100% fairness vs 78% in baselines.</p>
+                <div class="tech-tags"><span>Python</span><span>Gurobi</span><span>Multiprocessing</span><span>Graph Algorithms</span></div>
+                <button class="btn btn-small" onclick="window.open('https://github.com/rohit4kk/P-Fair-ranking.git')"><i class='bx bxl-github'></i> GitHub</button>
+            </div>
+        </article>
 
+        <article class="project-tile" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-media">
+                <img src="images/venus.png" alt="RISC-V">
+            </div>
+            <div class="project-body">
+                <span class="project-date">Mar 2025 – Apr 2025</span>
+                <h3><span class="gradient">RISC-V</span></h3>
+                <p class="project-tagline">Assembler &amp; Simulator · Computer Architecture</p>
+                <p>Assembler translating RISC-V assembly into machine code with full ISA support, plus a 5-stage pipelined CPU simulator with data forwarding, hazard resolution and BTB branch prediction.</p>
+                <div class="tech-tags"><span>C++</span><span>RISC-V ISA</span><span>Pipelining</span><span>Branch Prediction</span></div>
+                <button class="btn btn-small" onclick="window.open('https://github.com/Rajat-14/CS204_Group_Project.git')"><i class='bx bxl-github'></i> GitHub</button>
+            </div>
+        </article>
 
-        
+        <article class="project-tile" data-aos="fade-up" data-aos-delay="80">
+            <div class="project-media">
+                <img src="images/uno.png" alt="Smart Lock">
+            </div>
+            <div class="project-body">
+                <span class="project-date">Arduino</span>
+                <h3><span class="gradient">Smart Lock</span></h3>
+                <p class="project-tagline">RFID &amp; Fingerprint Access (Arduino Uno)</p>
+                <p>Dual-authentication smart lock with fingerprint enrollment/verification and RFID scanning, driving a servo motor lock with LED and buzzer feedback.</p>
+                <div class="tech-tags"><span>Arduino</span><span>MFRC522</span><span>Fingerprint Sensor</span><span>Servo</span></div>
+            </div>
+        </article>
+
+        <article class="project-tile" data-aos="fade-up" data-aos-delay="160">
+            <div class="project-media">
+                <img src="images/weather.png" alt="Weather Forecast App">
+            </div>
+            <div class="project-body">
+                <span class="project-date">Web App</span>
+                <h3><span class="gradient">Weather Forecast</span></h3>
+                <p class="project-tagline">Real-Time Weather Web App</p>
+                <p>Dynamic weather lookup app powered by the OpenWeatherMap API, with a Node.js/Express backend and secure environment-based API key management.</p>
+                <div class="tech-tags"><span>Node.js</span><span>Express.js</span><span>OpenWeatherMap API</span></div>
+            </div>
+        </article>
+
+        <article class="project-tile" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-media">
+                <img src="images/gamebar.png" alt="searchGames">
+            </div>
+            <div class="project-body">
+                <span class="project-date">Web App</span>
+                <h3><span class="gradient">searchGames</span></h3>
+                <p class="project-tagline">A Game Explorer</p>
+                <p>Web app for discovering games, with a Node.js/Express backend and a clean search-driven browsing experience.</p>
+                <div class="tech-tags"><span>Node.js</span><span>Express.js</span><span>REST API</span></div>
+            </div>
+        </article>
+
+        <article class="project-tile" data-aos="fade-up" data-aos-delay="80">
+            <div class="project-media">
+                <img src="images/Screenshot 2025-06-24 161043.png" alt="C to Promela Converter">
+            </div>
+            <div class="project-body">
+                <span class="project-date">Formal Verification</span>
+                <h3><span class="gradient">C to Promela</span></h3>
+                <p class="project-tagline">Code Converter</p>
+                <p>Tool converting C code constructs into equivalent Promela representations, translating loops, conditionals and assignments for SPIN model-checker verification.</p>
+                <div class="tech-tags"><span>C</span><span>Promela</span><span>SPIN</span></div>
+                <button class="btn btn-small" onclick="window.open('https://github.com/Rajat-14/C--Promela.git')"><i class='bx bxl-github'></i> GitHub</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section id="hobbies" class="section">
+    <div class="section-head" data-aos="fade-up">
+        <span class="kicker">Off the keyboard</span>
+        <h2 class="section-title">Hobbies</h2>
+    </div>
+
+    <div class="hobby-grid">
+        <div class="hobby-card" data-aos="fade-up" data-aos-delay="0">
+            <img src="images/ps5.jpg" alt="Gaming">
+            <div class="hobby-overlay">
+                <h3>Gaming</h3>
+                <p>I love diving into story-driven games — experiencing rich narratives, connecting with characters, and immersing myself in their worlds.</p>
+            </div>
+        </div>
+        <div class="hobby-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/video-editing.jpg" alt="Video Editing">
+            <div class="hobby-overlay">
+                <h3>Video Editing</h3>
+                <p>I enjoy piecing together clips and audio to craft engaging stories, blending creativity with precision to bring visions to life.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <video class="contact-bg" autoplay loop muted playsinline src="videos/3.mp4"></video>
+    <div class="contact-overlay"></div>
+
+    <div class="section-head" data-aos="fade-up">
+        <span class="kicker">Get in touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+    </div>
+
+    <div class="contact-grid">
+        <div class="glass-card contact-info" data-aos="fade-up" data-aos-delay="0">
+            <p>Whether you're looking to build something awesome, collaborate on a project, or just talk tech — let's connect! I'm just a message away.</p>
+
+            <a href="assets/Rohit_s_CV.pdf" download class="btn btn-primary cv-btn"><i class="bx bx-download"></i> Download CV</a>
+
+            <div class="contact-links">
+                <a href="tel:+919671098999"><i class='bx bxs-phone'></i> +91 9671098999</a>
+                <a href="https://www.linkedin.com/in/rohit-verma-319313309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin-square'></i> Rohit Verma</a>
+                <a href="https://github.com/rohit4kk" target="_blank"><i class='bx bxl-github'></i> rohit4kk</a>
+            </div>
+        </div>
+
+        <form class="glass-card contact-form" name="submit-to-google-sheet" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="post" data-aos="fade-up" data-aos-delay="100">
+            <label>Full Name</label>
+            <input name="Name" placeholder="Your Full Name" type="text" required>
+
+            <label>Email Address</label>
+            <input name="Email" placeholder="Your Email" type="email" required>
+
+            <label>Your Message</label>
+            <textarea name="Message" rows="5" placeholder="Share your thoughts..." required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message <i class='bx bx-mail-send'></i></button>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Rohit Verma. Built with curiosity and a lot of coffee.</p>
+</footer>
+
+<script src="app.js"></script>
+<script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+<script>AOS.init({ once: true });</script>
+
 </body>
 </html>
